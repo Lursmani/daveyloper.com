@@ -1,0 +1,444 @@
+:root {
+    --footer-color: gray;
+    --primary: #3c87b3;]
+    --main-text-color: #231f20;
+}
+
+
+
+body{
+   margin: 0;
+   background-color: white;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 0;
+    margin:0;
+    font-family: Cantarell, Arial, Helvetica, sans-serif;
+}
+
+
+/* Navigation bar styles */
+
+nav {
+    grid-row: 1/2;
+    width: 100vw;
+    display: flex;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0px 1px 10px black;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Cantarell, Arial, Helvetica, sans-serif;
+    color: #231f20;
+    z-index: 1;
+}
+.navlink {
+    color: #231f20;
+}
+#logoimg {
+    margin-left: 5vw;
+    height: 15vh;
+}
+.navbar-links {
+    height: 100%;
+    margin-right: 5vw;
+}
+.navbar-links ul {
+   
+    padding: 0;
+    display: flex;
+    font-size: 3vh;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a {
+    list-style: none;
+    display: block;
+    padding: 3vh 1vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #231f20;
+}
+.navbar-links li a:visited{
+    color: #231f20;
+}
+.navbar-links li :hover {
+    background-color: gray;
+}
+
+/* hamburger button */
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 9vh;
+    padding: 0.5em;
+}
+.toggle-button .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #231f20;
+    border-radius: 15px;
+}
+.toggle-button:hover{
+    background-color: gray;
+}
+@media only screen and (max-width: 800px) {
+    #logoimg {
+        margin-left: 1rem;
+        margin-top: 0.75rem;
+        max-width: 40vw;
+    }
+    .toggle-button {
+        display: flex;
+     }
+    .navbar-links {
+         display: none;
+    }
+    .navbar-links {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right: 40vw;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100% ;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: 0.5rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    
+}
+
+/* Main body stles */
+
+.main {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+/* banner styles */
+
+.header {
+    display: grid;
+    grid-row: 1/ span 1;
+    grid-template-areas: "hero";
+    height: 60vh;
+    max-height: 700px;
+    place-items: center;
+    box-shadow: 0 1px 10px;
+    background-color: rgba(60, 135, 179, 0.3);
+}
+.header * {
+    grid-area: hero;
+}
+.header img {
+    z-index: -1;
+}
+.hero-content {
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+#banner-text-big{
+    font-size: 8vh;
+}
+#banner-text-small{
+    font-size: 4vh;
+}
+#hero-button {
+    border-style: none;
+    background-color: rgba(17, 76, 204, 0.3);
+    border-radius: 15px;
+    padding: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: ease;
+    transition-duration: 0.5s;
+    margin-top: 3em;
+}
+#hero-button:hover {
+    background-color:  rgba(17, 76, 204, 0.7);
+    transition: ease;
+    transition-duration: 0.5s;
+}
+@media only screen and (max-width: 500px) {
+    #banner-text-big {
+        letter-spacing: normal;
+        font-size: 2em;
+    }
+    #banner-text-small {
+        letter-spacing: normal;
+        font-size: 1em;
+    }
+    .header{
+        height: 80vh;
+    }
+    #hero-button {
+        padding: 0.5em;
+    }
+}
+
+#hero-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#slides-header {
+    grid-row: 2/3;
+    text-align: center;
+    box-shadow: 1px 1px 10px;
+    padding: 1em;
+    font-size: 2em;
+    color: #231f20;
+    margin: 1em 0em 1em 0em;
+}
+/* project slides styles */
+
+.project-slides {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(12 1fr);
+    grid-row: 3/span 2;
+    background-color: white;
+    grid-gap: 0.3em;
+    z-index: 0;
+    margin-bottom: 1.5em;
+}
+.project-slides a {
+    z-index: 2;
+    align-self: end;
+    justify-self: center;
+    font-size: 3.5vw;
+    text-decoration: none;
+    background-color: rgba(17, 76, 204, 0.3);
+    color: lightgray;
+    margin-bottom: 0.3em;
+    padding: 0.2em;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    transition: ease;
+}
+.project-slides a:hover {
+    background-color: rgba(17, 76, 204, 0.8);
+    transition: ease;
+    transition-duration: 0.5s;
+
+}
+.project-slides p {
+    z-index: 1;
+    justify-self: center;
+    align-self: center;
+    font-size: 2vw;
+    margin: 1em;
+    margin-bottom: 4em;
+}
+
+
+.project1-hover-overlay {
+    grid-area: project1;
+    background-color: black;
+    z-index: 1;
+    opacity: 0;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+.project1-hover-overlay:hover {
+    opacity: 0.3;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+
+ .project2-hover-overlay {
+    grid-area: project2;
+    background-color: black;
+    z-index: 1;
+    opacity: 0;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+.project2-hover-overlay:hover {
+    opacity: 0.3;
+    transition: ease;
+    transition-duration: 0.5s;
+    
+}
+.project3-hover-overlay {
+    grid-area: project3;
+    background-color: black;
+    z-index: 1;
+    opacity: 0;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+.project3-hover-overlay:hover {
+    opacity: 0.3;
+    transition: ease;
+    transition-duration: 0.5s;
+    
+} 
+
+#project-1 {
+    flex: 1 1 200px; 
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "project1";
+    box-shadow: 1px 1px 10px;
+}
+#project-1 img {
+    justify-self: stretch;
+    object-fit: cover;
+    align-self: stretch;
+    width: 100%;
+    grid-area: project1;
+    min-height: 300px;
+
+}
+
+#project-1 a {
+    grid-area: project1;
+}
+#project-1 p {
+    grid-area: project1;
+}
+
+#project-2 {
+    flex: 1 1 200px; 
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "project2";
+    box-shadow: 1px 1px 10px;
+}
+#project-2 img {
+    justify-self: stretch;
+    object-fit: cover;
+    align-self: stretch;
+    width: 100%;
+    grid-area: project2;
+    min-height: 300px;
+}
+
+#project-2 a {
+    grid-area: project2;
+}
+#project-2 p {
+    grid-area: project2;
+}
+
+#project-3 {
+    flex: 1 1 200px; 
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "project1";
+    box-shadow: 1px 1px 10px;
+}
+#project-3 img {
+    justify-self: stretch;
+    object-fit: cover;
+    align-self: stretch;
+    width: 100%;
+    grid-area: project3;
+    min-height: 300px;
+
+}
+
+#project-3 a {
+    grid-area: project3;
+}
+#project-3 p {
+    grid-area: project3;
+}
+
+@media only screen and (max-width: 800px){
+    .project-slides p {
+        font-size: 1em;
+    }
+    .project-slides a {
+        font-size: 2em;
+    }
+}
+
+
+
+/* footer styles */
+
+.footer {
+    grid-row: 3/4;
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    margin: 0;
+    width: 100vw;
+    box-shadow: 0px -1px 10px;
+    z-index: 1;
+
+}
+#footer-text {
+    font-family: Cantarell, Arial, Helvetica, sans-serif;
+    width: 100%;
+    align-self: center;
+    font-size: 1.5em;
+    margin-left: 4em;
+}
+
+
+#contact-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 4em;
+}
+.contact-images:hover {
+    background-color: lightslategray;
+}
+.contact-images {
+    border-radius: 50%;
+    width: 5em;
+    padding: 1em 1em 1em 1em;
+   
+}
+
+
+@media only screen and (max-width: 800px) {
+    #footer-text {
+        font-size: 1em;
+        margin-left: 1em;
+    }
+    #contact-buttons {
+        align-items: center;
+        margin-right: 1em;
+    }
+    .contact-images {
+        width: 2em;
+        padding: 0.3em;
+        height: 2em
+       
+    }
+
+}
