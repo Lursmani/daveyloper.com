@@ -445,7 +445,7 @@ nav {
 /* TRIBUTE PAGE STYLES */
 
 
-#main {
+#tribute-main {
     display: grid;
     grid-template-columns: minmax(300px, 1fr);
     grid-template-rows: auto auto auto;
@@ -457,11 +457,11 @@ nav {
     margin: 0.5em 2em 0.5em 2em;
     box-shadow: 0px 0px 5px;
 }
-#title {
+#tribute-title {
     grid-area: tribute-title;
     font-size: 2em;
 }
-#img-div{
+#tribute-img-div{
     grid-area: tribute-image;
     display: grid;
     grid-template-areas: "tribute-img"
@@ -469,12 +469,12 @@ nav {
     grid-gap: 0;
     width: 60%;
 }
-#image {
+#tribute-image {
     max-width: 100%;
     grid-area: tribute-img;
     justify-self: center;
 }
-#img-caption {
+#tribute-img-caption {
     grid-area: tribute-caption;
     justify-self: center;
     margin-top: 0;
@@ -502,10 +502,10 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
-    #main {
+    #tribute-main {
         margin: 0.5em 0 0.5em 0;
     }
-    #img-div {
+    #tribute-img-div {
         width: 100%;
     }
 }

@@ -1,0 +1,196 @@
+
+body{
+   margin: 0;
+   background-color: white;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 0;
+    margin:0;
+    font-family: Cantarell, Arial, Helvetica, sans-serif;
+}
+
+
+/* Navigation bar styles */
+
+nav {
+    grid-row: 1/2;
+    width: 100vw;
+    display: flex;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0px 1px 10px black;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Cantarell, Arial, Helvetica, sans-serif;
+    color: #231f20;
+    z-index: 1;
+}
+.navlink {
+    color: #231f20;
+}
+
+#logoimg {
+    margin-left: 5vw;
+    width: 20vw;
+}
+.navbar-links {
+    height: 100%;
+    margin-right: 5vw;
+}
+.navbar-links ul {
+   
+    padding: 0;
+    display: flex;
+    font-size: 3vh;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a {
+    list-style: none;
+    display: block;
+    padding: 3vh 1vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #231f20;
+}
+.navbar-links li a:visited{
+    color: #231f20;
+}
+.navbar-links li :hover {
+    background-color: gray;
+}
+
+/* hamburger button */
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 9vh;
+    padding: 0.5em;
+}
+.toggle-button .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #231f20;
+    border-radius: 15px;
+}
+.toggle-button:hover{
+    background-color: gray;
+}
+
+
+
+/* Main body stles */
+
+.main {
+    grid-row: 2/3;
+    display: grid;
+}
+
+
+
+.footer {
+    grid-row: 3/4;
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    margin: 0;
+    width: 100vw;
+    box-shadow: 0px -1px 10px;
+    z-index: 1;
+
+}
+#footer-text {
+    font-family: Cantarell, Arial, Helvetica, sans-serif;
+    width: 100%;
+    align-self: center;
+    font-size: 1.5em;
+    margin-left: 4em;
+}
+
+
+#contact-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 4em;
+}
+.contact-images:hover {
+    background-color: lightslategray;
+}
+.contact-images {
+    border-radius: 50%;
+    width: 5em;
+    padding: 1em 1em 1em 1em;
+   
+}
+
+
+@media only screen and (max-width: 768px) {
+   
+    #logoimg {
+        margin-left: 1rem;
+        margin-top: 0.75rem;
+        width: 40vw;
+        margin-left: 0rem;
+    }
+    .toggle-button {
+        display: flex;
+     }
+    .navbar-links {
+         display: none;
+    }
+    .navbar-links {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right: 20vw;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100% ;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: 0.5rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+
+
+
+
+
+    #footer-text {
+        font-size: 1em;
+        margin-left: 1em;
+    }
+    #contact-buttons {
+        align-items: center;
+        margin-right: 1em;
+    }
+    .contact-images {
+        width: 2em;
+        padding: 0.3em;
+        height: 2em
+       
+    }
+}
+
+
+
+
+
+/* Survey Form STYLES */
+
