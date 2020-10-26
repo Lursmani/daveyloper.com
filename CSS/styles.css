@@ -320,7 +320,11 @@ nav {
     grid-area: project3;
 }
 
-
+.center-container {
+    display: grid;
+    margin: 1em 2em 1em 2em;
+    box-shadow: 0 0 5px;
+}
   
 
 
@@ -420,7 +424,9 @@ nav {
     .project-slides a {
         font-size: 2em;
     }
-
+    .center-container {
+        margin: 1em 0 1em 0;
+    }
 
     #footer-text {
         font-size: 1em;
