@@ -168,7 +168,8 @@ nav {
 
  #comments {
      border-radius: 5px;
-     padding: 1em 5em 1em 5em;
+     padding: 1em 2em 1em 2em;
+     width: 50%;
  }
  
  #submit {
