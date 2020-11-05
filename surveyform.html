@@ -25,28 +25,31 @@
             </a>
             <div class="navbar-links">   
                  <ul>
-                    <li><a class="navlink" href="#">Home</a></li>
-                    <li><a class="navlink" href="#">About</a></li>
-                    <li> <a class="navlink" href="#">Projects</a></li>
-                    <li> <a class="navlink" href="#">Contact</a></li>
+                    <li><a class="navlink" href="index.html">Home</a></li>
+                    <li><a class="navlink" href="about.html">About</a></li>
+                    <li> <a class="navlink" href="projects.html">Projects</a></li>
+                    <li> <a class="navlink" href="contact.html">Contact</a></li>
                  </ul>
             </div>
         </nav>
 
-<main class="main"> 
-
+<main class="main" > 
+    <img src="images/dumplings.jpg" alt="" id="dumpling-background">
+<div class="center-container"> 
+<div id="survey-background"></div>
+<div id="survey-container">
     <h1 id="title">Dumpling Eating Contest Application</h1>
     <p id="description"> Fill in the fields below in order to apply for the annual dumpling eating contest </p>
 
     <form id="survey-form">
-        <label for="name" id="name-label"> First name </label> <br>
-            <input type="text" id="name" name="name" placeholder="Enter Your Name" required> <br>
+        <label for="name" id="name-label" > First name </label> <br>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required class="textfield"> <br>
 
         <label for="email" id="email-label"> Email </label> <br>
-            <input type="email" id="email" name="email" placeholder="Enter Your Email" required> <br>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required class="textfield"> <br>
 
         <label for="number" id="number-label">How many dumplings can you eat at once?</label> <br>
-            <input type="number" id="number" name="number" placeholder="How many dumplings?" min="5" max="99"> <br>
+            <input type="number" id="number" name="number" placeholder="How many dumplings?" min="1" max="199" class="textfield"> <br>
 
         <label for="dropdown" id="dropdown-label">What is your favorite type of dumpling?</label> <br>
             <select name="dropdown" id="dropdown">
@@ -60,17 +63,17 @@
         <p> Does your health insurance cover dumpling eating contest-related injuries? </p> 
 
             <label>
-                <input type="radio" name="insurance" value="yes">
+                <input type="radio" name="insurance" value="yes" class="radio">
             Yes
             </label> <br>
 
             <label>
-                <input type="radio" name="insurance" value="no">
+                <input type="radio" name="insurance" value="no" class="radio">
             No
             </label> <br>
             
             <label>
-                <input type="radio" name="insurance" value="uncertain">
+                <input type="radio" name="insurance" value="uncertain" class="radio">
             I don't know
             </label>
 
@@ -110,7 +113,8 @@
                 <button id="submit" type="submit">Submit</button>
             </label>
     </form>
-
+</div>
+</div>
 </main>
 
         <footer class="footer">
@@ -119,7 +123,7 @@
                 <p id="temptext" style="font-style: italic; font-size: 0.6em;"> (Site is currently under construction and will look different as I experiment with new designs.) </p>   
             </div>
              <div id="contact-buttons"> 
-                <a href="https://www.linkedin.com/in/davit-l-185085b5/">
+                <a href="https://www.linkedin.com/in/davit-lursmanashvili/">
                     <img src="images/linkedin.png" alt="linkedin" class="contact-images" id="linkedin-image">
                 </a>
                 <a href="https://www.facebook.com/dato.lursmanashvili">
