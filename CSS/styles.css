@@ -671,6 +671,7 @@ nav {
     grid-template-rows: auto auto auto auto;
     grid-gap: 0.5em;
     margin: 0.5em 0;
+    
 }
 #about-banner {
     display: grid;
@@ -699,6 +700,7 @@ nav {
     box-shadow: 2px 2px 5px ;
     padding: 1em 4em;
     align-items: center;
+    
 }
 #about-banner-title {
     text-shadow: 1px 1px gray;
@@ -724,6 +726,7 @@ nav {
     border-radius: 7px;
     transition: 0.5s ease;
     justify-self: center;
+ 
 }
 .about-intralink:hover {
     background: #5a5f64b2;
