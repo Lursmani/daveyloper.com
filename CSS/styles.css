@@ -678,7 +678,6 @@ nav {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     min-height: 50vh;
-    max-height: 80vh;
     grid-row: 1 / 2;
 }
 
