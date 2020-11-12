@@ -94,18 +94,55 @@ body{
  .main {
      grid-row: 2/3;
      display: grid;
+     grid-template-columns: 30vw auto;
+     padding: 0 5% 0 0;
+     min-height: 100vh;
+ }
+ .main header {
+     font-size: 2em;
  }
  
+ #navbar {
+     position: fixed;
+     width: 30vw;
+     max-height: 70%;
+     margin-top: 2%;
+     box-shadow: none;
+     
+ }
+
+ #navbar ul {
+     list-style: none;
+ }
+ #navbar ul li {
+     padding: 1em 1em;
+     margin: 5px;
+}
+#navbar header {
+    padding: 0;
+}
+ .nav-link {
+     text-decoration: none;
+    font-size: 2vw;
+   
+ }
+
+ 
+
+ #text-div {
+     grid-column: 2/3;
+     padding: 2em;
+     border-left: solid gray;
+     scroll-behavior: smooth;
+
+ }
+
  
 
 
+ /* ####### FOOTER STYLES #######*/
 
 
-
-
-
- /* ########## FOOTER STYLES ############*/
- 
  .footer {
      grid-row: 3/4;
      display: flex;
@@ -192,6 +229,39 @@ body{
          width: 2em;
          padding: 0.3em;
          height: 2em
+        
+     }
+
+
+     /* Tech doc styles */
+
+     .main {
+        grid-template-columns: auto;
+        grid-template-rows: 40vh auto;
+        
+     }
+     #navbar {
+         position: static;
+         grid-row: 1 / 2;
+         grid-column: 1 / 2;
+         overflow: scroll;
+         width: auto;
+        max-height: 100%; 
+        width: 100vw;
+        padding-top: 40vh;
+        border-bottom: 2px solid gray;
+    }
+     #navbar header {
+         padding: 2em 2em 0 0;
+         font-size: 1.4em;
+     }
+    .nav-link {
+        font-size: 3vh;
+    }
+     #text-div {
+         grid-row: 2 / 3;
+         grid-column: 1 / 2;
+         border: none;
         
      }
  }
