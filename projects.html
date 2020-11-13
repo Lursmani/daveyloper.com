@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -34,10 +34,108 @@
         </nav>
 
 <main class="main"> 
-    <div id="projects-div">
-        <img src="images/under-construction.png" alt="Website under construction" style="justify-self: center; align-self: center;"" >
+    <div id="projects-container">
+        <div id="projects-header">
+            <h1 class="projects-header-title">
+                Welcome to my portfolio page
+            </h1>
+            <p class="projects-header-paragraph">
+                You can check out some of my projecs below. 
+            </p>
+        </div>
 
+        <button type="button" class="collapsible">FCC Responsive Web Design</button>
+            <div class="content">
+                <div class="collapsible-content-grid">
+                <div class="collapsible-description-box">
+                    <h3 class="collapsible-description-title">There are projects I did as part of my course on freecodecamp.com</h3>
+                </div>
+                <div class="collapsible-content-box">
+                    <div class="portfolio-box">
+                        <a href="tribute.html" class="portfolio-box-link"><img src="images/tribute-page.png" class="portfolio-box-image"></a>
+                        <a href="tribute.html" class="portfolio-box-title">
+                            Tribute Page
+                        </a>
+                        <p class="portfolio-box-text">
+                            This is a simple tribute page that I made as part of my course on freecodecamp.com
+                        </p>
+                    </div>
+                
+                
+                    <div class="portfolio-box">
+                        <a href="landingpage.html" class="portfolio-box-link"><img src="images/landing page.png" class="portfolio-box-image"></a>
+                        <a href="landingpage.html" class="portfolio-box-title">
+                            Landing Page
+                        </a>
+                        <p class="portfolio-box-text">
+                            This is a simple Landing page that I made as part of my course on freecodecamp.com
+                        </p>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <a href="projects/portfolio.html" class="portfolio-box-link"><img src="images/portfolio.png" class="portfolio-box-image"></a>
+                        <a href="projects/portfolio.html" class="portfolio-box-title">
+                            Portfolio page
+                        </a>
+                        <p class="portfolio-box-text">
+                            This is a portfolio page made to the specifications of FCC's assignment.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+            </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   <!--
+    <button type="button" class="collapsible">Template title</button>
+    <div class="content">
+        <div class="collapsible-content-grid">
+        <div class="collapsible-description-box">
+            <p class="collapsible-description-paragraph">
+                Template Paragraph
+            </p>
+        </div>
+        <div class="collapsible-content-box">
+            <div class="portfolio-box">
+                <a href="#" class="portfolio-box-link"><img src="#" class="portfolio-box-image"></a>
+                <a href="#" class="portfolio-box-title">
+
+                </a>
+                <p class="portfolio-box-text">
+
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+-->
+</div>
+
+
+
+
+
+
+
+
+
+
 
 </main>
 
@@ -61,6 +159,27 @@
 
     
     </div>
+
+
+
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+   var i;
+   
+   for (i = 0; i < coll.length; i++) {
+     coll[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var content = this.nextElementSibling;
+       if (content.style.display === "block") {
+         content.style.display = "none";
+       } else {
+         content.style.display = "block";
+       }
+     });
+   }
+   </script>
 </body>
 
 </html>
