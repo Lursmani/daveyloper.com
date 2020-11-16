@@ -360,13 +360,13 @@ nav {
     margin-right: 4em;
 }
 .contact-images:hover {
-    background-color: lightslategray;
+    background-color: rgb(143, 155, 211);
+    box-shadow: 1px 1px 5px rgb(113, 196, 211);
 }
 .contact-images {
     border-radius: 50%;
     width: 5em;
-    padding: 1em 1em 1em 1em;
-   
+    padding: 1em;   
 }
 
 
@@ -835,12 +835,33 @@ nav {
 
 #projects-container {
     display: grid;
+    grid-template-rows:  auto;
+    margin: 0.5em 0;
 }
 #projects-header {
     display: grid;
+    background: rgb(22,70,120);
+    background: linear-gradient(297deg, rgba(34,77,121,1) 0%, rgba(19,33,87,1) 100%);
+
+    box-shadow: 1px 1px 5px;
+}
+.projects-header-title {
+    justify-self: center;
+    font-size: 3em;
+    padding: 2em 0.5em 0 0.5em;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+.projects-header-paragraph {
+    justify-self: center;
+    font-size: 1.3em;
+    padding: 0 15%;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-weight: 500;
 }
 .collapsible {
-    background-color: #3B5966;
+    background-color: #314675;
     color: white;
     text-shadow: 1px 1px 3px black;
     cursor: pointer;
@@ -864,27 +885,33 @@ nav {
 .content {
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #23283d;
   }
 .collapsible-content-grid {
     display: grid;
     justify-items: center;
     width: 100vw;
+    
 }
 .collapsible-description-box {
     display: grid;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0px 0px 8px;
     width: 100%;
+    background: #334691;
 }
 .collapsible-description-title {
     justify-self: center;
     padding: 1em 0.5em;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-size: 1.5em;
 }
 .collapsible-content-box {
       display: flex;
       flex-wrap: wrap;
       width: 95vw;
       justify-content: space-evenly;
+      
   }
   
 .portfolio-box {
@@ -894,6 +921,7 @@ nav {
     box-shadow: 1px 1px 5px;
     margin: 1em 1em;
     grid-template-rows: 40vh auto auto;
+    background: rgb(214, 216, 219)
 }
 .portfolio-box-link{
     padding: 0 0 1em 0;
@@ -1017,6 +1045,17 @@ nav {
     }
     .about-box-odd, .about-box-even {
         justify-items: center;
+    }
+
+
+
+    /*######## Projects Styles ###### */
+
+    .projects-header-title {
+        font-size: 6vw;
+    }
+    .projects-header-paragraph {
+        padding: 1em;
     }
 }
 
