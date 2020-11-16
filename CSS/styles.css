@@ -335,13 +335,13 @@ nav {
 .footer {
     grid-row: 3/4;
     display: flex;
-    background-color: gray;
+    background: rgb(37, 38, 58);
     justify-content: space-between;
     margin: 0;
     width: 100vw;
     box-shadow: 0px -1px 10px;
     z-index: 1;
-
+    color: white;
 }
 #footer-text {
     font-family: Cantarell, Arial, Helvetica, sans-serif;
@@ -349,6 +349,7 @@ nav {
     align-self: center;
     font-size: 1.5em;
     margin-left: 4em;
+    
 }
 
 
@@ -359,13 +360,13 @@ nav {
     margin-right: 4em;
 }
 .contact-images:hover {
-    background-color: lightslategray;
+    background-color: rgb(143, 155, 211);
+    box-shadow: 1px 1px 5px rgb(113, 196, 211);
 }
 .contact-images {
     border-radius: 50%;
     width: 5em;
-    padding: 1em 1em 1em 1em;
-   
+    padding: 1em;   
 }
 
 
@@ -829,6 +830,152 @@ nav {
 
 
 
+/* ############################ Projects Page Styles ##################*/
+
+
+#projects-container {
+    display: grid;
+    grid-template-rows:  auto;
+    margin: 0.5em 0;
+}
+#projects-header {
+    display: grid;
+    background: rgb(22,70,120);
+    background: linear-gradient(297deg, rgba(34,77,121,1) 0%, rgba(19,33,87,1) 100%);
+
+    box-shadow: 1px 1px 5px;
+}
+.projects-header-title {
+    justify-self: center;
+    font-size: 3em;
+    padding: 2em 0.5em 0 0.5em;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+.projects-header-paragraph {
+    justify-self: center;
+    font-size: 1.3em;
+    padding: 0 15%;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-weight: 500;
+}
+.collapsible {
+    background-color: #314675;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    padding: 2em 1em;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 2.5em;
+    margin: 0.5em 0;
+    box-shadow: 1px 1px 5px;
+}
+
+.active, .collapsible:hover {
+    background-color: #323E4F;
+  }
+
+
+  /* refactor this eventually */
+
+.content {
+    display: none;
+    overflow: hidden;
+    background-color: #23283d;
+  }
+.collapsible-content-grid {
+    display: grid;
+    justify-items: center;
+    width: 100vw;
+    
+}
+.collapsible-description-box {
+    display: grid;
+    box-shadow: 0px 0px 8px;
+    width: 100%;
+    background: #334691;
+}
+.collapsible-description-title {
+    justify-self: center;
+    padding: 1em 0.5em;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-size: 1.5em;
+}
+.collapsible-content-box {
+      display: flex;
+      flex-wrap: wrap;
+      width: 95vw;
+      justify-content: space-evenly;
+      
+  }
+  
+.portfolio-box {
+    flex: 1 1 300px;
+    display: grid;
+    justify-items: center;
+    box-shadow: 1px 1px 5px;
+    margin: 1em 1em;
+    grid-template-rows: 40vh auto auto;
+    background: rgb(214, 216, 219)
+}
+.portfolio-box-link{
+    padding: 0 0 1em 0;
+}
+.portfolio-box-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+.portfolio-box-title {
+    padding: 1em 1em;
+    text-decoration: none;
+    color: #231f20;
+    align-self: center;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 1px 1px  3px;
+}
+.portfolio-box-title:hover {
+    color: #231f20;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
+}
+.portfolio-box-text {
+    padding: 1em 1em;
+    color: #231f20;
+    align-self: center;
+    font-size: 1.3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 768px) {
    
     
@@ -899,6 +1046,17 @@ nav {
     .about-box-odd, .about-box-even {
         justify-items: center;
     }
+
+
+
+    /*######## Projects Styles ###### */
+
+    .projects-header-title {
+        font-size: 6vw;
+    }
+    .projects-header-paragraph {
+        padding: 1em;
+    }
 }
 
 
@@ -907,13 +1065,8 @@ nav {
 
 
 
-/* ############################ PROJECTS PAGE #######################*/
 
 
-
-#projects-div {
-    display: grid;
-}
 
 
 
